@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ND Snake</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen" type="text/css" href="cssSnake.css" />
+        <link rel="icon" type="image/png" href="images/favicone.png" />
+        
+    </head>
+    <body>
+        <div id="divOverlay">
+        
+            
+            
+            <div id="idLigneModes">
+                <div class="divLibelleChoix"> <p class="Titres">Mode de jeux</p>  </div>
+                <div class="divLibelleChoix"> <p class="Titres">Type de serpent</p>  </div>
+                <div class="divLibelleChoix"> <p class="Titres">Couleur et Monde</p>  </div>
+            </div>
+            
+            
+            <div id="idContenantChoix">
+                
+
+                <div>   
+                    <div class="divGrandeCase">   
+                        <div class="divDescription"><p class="SousTitres"><strong>Classique</strong> <br /></p> <p>Donne a manger autant que tu peux a ton Snaky. <br>Attention a ne pas te manger la queue!</p></div>
+                        <div id="divTypeJeuxClassique" class="divImagesSerpents"><img class="imagesSerpents" src="images/classique.jpg"></div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="divGrandeCase">   
+                        <div class="divDescription"><p class="SousTitres"><strong>Vipere</strong> <br /></p> <p>Le puissant venin de cette vipere viendra a bout de n'importe quelle proie</p></div>
+                        <div id="divTypeSerpentVipere" class="divImagesSerpents"><img class="imagesSerpents" src="images/serpentTypeVipere.jpg"></div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="divGrandeCase">   
+                        <div id="divGrandeCaseCouleur">
+                            <div>
+                                <div id="divCouleurSable" class="divCouleur"> </div>
+                                <div class="divDescriptionCouleur"> <p>Sois parfaitement adapte a l'hostilite desertique</p> </div>
+                            </div>
+                            <div>
+                                <div class="divCouleur" id="divCouleurJungle"> </div>
+                                <div class="divDescriptionCouleur"> <p>La jungle n'aura plus de secret pour toi</p> </div>
+                            </div>
+                            <div>
+                                <div id="divCouleurEau" class="divCouleur"> </div>
+                                <div class="divDescriptionCouleur"> <p>Deviens aussi fluide que l'environnement dans lequel tu evolues</p> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="divGrandeCase">   
+                        <div class="divDescription"><p class="SousTitres"><strong>Battle</strong> <br /></p> <p>Confronte toi a un feroce anaconda et sois le premier a absorber 30 proies. <br>Tous les coups sont permis!</p></div>
+                        <div id="divTypeJeuxBattle" class="divImagesSerpents"><img class="imagesSerpents" src="images/battle.jpg"></div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <div class="divGrandeCase">   
+                        <div class="divDescription"><p class="SousTitres"><strong>Constricteur</strong> <br /></p> <p>La force des anneaux de ce constricteur ne donnera aucune chance a tous ceux qui se presenteront sur son chemin</p></div>
+                        <div id="divTypeSerpentConstricteur" class="divImagesSerpents"><img class="imagesSerpents" src="images/serpentTypeConstricteur.jpg"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="divGrandeCase">   
+
+                            <div id="divLibelleDifficulte"> <p class="Titres">Difficulte</p>  </div>
+                            <div id="divGrandeCaseDifficulte" class="divGrandeCase"> 
+                            <div id="divChoixDifficulte">
+                                <div>
+                                    <div id="divGirls" class="divDifficulte"> <p>Girls's Special</p> </div>
+                                    <div class="divDescriptionDifficulte"> <p>Pour Fif et Choupa</p> </div>
+                                </div>
+                                <div>
+                                    <div id="divFacile" class="divDifficulte"> <p>(trop) Facile</p> </div>
+                                    <div class="divDescriptionDifficulte"> <p>Je serais decu de te voir choisir ce mode la...</p> </div>
+                                </div>
+                                <div>
+                                    <div id="divMoyen" class="divDifficulte"> <p> Raisonnable</p>  </div>
+                                    <div class="divDescriptionDifficulte"> <p>Un mode pour les papis mamies - Ton cas peut-etre ?</p> </div>
+                                </div>
+                                <div>
+                                    <div id="divDifficile" class="divDifficulte"> <p>Injouable</p> </div>
+                                    <div class="divDescriptionDifficulte"> <p>Oseras-tu seulement?</p> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+            </div>
+        </div>
+            
+            
+            
+            
+            
+            
+            
+        
+
+        
+        
+        <div id="divContenantPlateauJeux">
+            <div id="divInfosJeux">
+                
+                <div id="divRecommencer"><p>Recommencer</p></div>
+                <div id="divScores"><p class="divScoreChange"></p><br><p class="divScoreChangePC"></p></div>
+                <div id="divMenuPrincipal"><p>Menu principal</p></div>
+            </div>
+            <div id="DIVcanvas">
+                <canvas id="canvas" width="400" height="300">
+                    <p>Désolé, votre navigateur ne supporte pas Canvas. Mettez-vous à jour</p>
+                </canvas>
+            </div>
+            <div id="divInfosJeux">
+                <div>
+                    <div id="divMeilleurScore"><p>Meilleur score: </p></div>
+                    <div id="divReinitScores"><p>Remettre a 0</p></div>
+                </div>
+                <div id="divAffichageDifficulte"><p>Difficulte:</p></div>
+            </div>
+        </div>
+        
+        
+        
+        <script src="jsSnake.js"></script>
+    </body>
+    
+    
+    
+</html>
